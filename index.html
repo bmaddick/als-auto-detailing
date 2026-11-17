@@ -233,6 +233,9 @@
           </ul>
         </div>
         <form class="contact__form" onsubmit="return handleSubmit(event)">
+          <input type="hidden" name="_subject" value="New booking request — Al's Auto Detailing website" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
           <div class="field">
             <label for="name">Name</label>
             <input id="name" name="name" type="text" required placeholder="Your name" />
@@ -240,6 +243,10 @@
           <div class="field">
             <label for="phone">Phone</label>
             <input id="phone" name="phone" type="tel" required placeholder="(555) 000-0000" />
+          </div>
+          <div class="field">
+            <label for="email">Email <span class="field__opt">(optional)</span></label>
+            <input id="email" name="email" type="email" placeholder="you@email.com" />
           </div>
           <div class="field">
             <label for="service">Package</label>
@@ -278,12 +285,31 @@
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
-    function handleSubmit(e) {
+    var FORM_ENDPOINT = "https://formsubmit.co/ajax/Alexfite3@gmail.com";
+    async function handleSubmit(e) {
       e.preventDefault();
+      var form = e.target;
       var note = document.getElementById('formNote');
-      note.textContent = "Thanks! This demo form isn't connected yet — for now, call or text 615-393-9084 to lock in your appointment.";
-      note.classList.add('form__note--ok');
-      e.target.reset();
+      var btn = form.querySelector('button[type="submit"]');
+      note.className = 'form__note';
+      note.textContent = 'Sending your request…';
+      btn.disabled = true;
+      try {
+        var res = await fetch(FORM_ENDPOINT, {
+          method: 'POST',
+          headers: { 'Accept': 'application/json' },
+          body: new FormData(form)
+        });
+        if (!res.ok) throw new Error('Request failed: ' + res.status);
+        note.textContent = "Thanks! Your request is on its way — we'll be in touch shortly. Need it sooner? Call or text 615-393-9084.";
+        note.classList.add('form__note--ok');
+        form.reset();
+      } catch (err) {
+        note.textContent = "Sorry, that didn't go through. Please call or text 615-393-9084 and we'll get you booked right away.";
+        note.classList.add('form__note--err');
+      } finally {
+        btn.disabled = false;
+      }
       return false;
     }
   </script>

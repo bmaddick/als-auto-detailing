@@ -182,10 +182,13 @@ a { color: inherit; }
 .contact__form { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.9rem; display: grid; gap: 1rem; }
 .field { display: grid; gap: 0.35rem; }
 .field label { font-size: 0.85rem; color: var(--muted); font-weight: 500; }
+.field__opt { color: #6f6f76; font-weight: 400; }
+.hp { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
 .field input, .field select, .field textarea { width: 100%; background: var(--bg); border: 1px solid var(--line); color: var(--ink); border-radius: 10px; padding: 0.75rem 0.9rem; font: inherit; font-size: 0.95rem; }
 .field input:focus, .field select:focus, .field textarea:focus { outline: none; border-color: var(--gold); }
 .form__note { margin: 0.2rem 0 0; font-size: 0.88rem; color: var(--muted); min-height: 1.2em; }
 .form__note--ok { color: var(--gold-2); }
+.form__note--err { color: #ff8a7a; }
 
 /* Footer */
 .footer { border-top: 1px solid var(--line); padding: 2.2rem 0; background: var(--bg-2); }
