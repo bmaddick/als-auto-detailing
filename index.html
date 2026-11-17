@@ -3,52 +3,61 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Al's Auto Detailing — Showroom Shine, Every Time</title>
-  <meta name="description" content="Al's Auto Detailing delivers premium interior & exterior detailing, ceramic coatings, and paint correction. Mobile service available. Book your appointment today." />
-  <meta name="theme-color" content="#0b1220" />
+  <title>Al's Auto Detailing — Get Your Divine Shine</title>
+  <meta name="description" content="Al's Auto Detailing — premium mobile auto detailing. Hand wash, spray wax, interior cleaning, shampoo & tire shine. This week: $100 inside & out. Call or text 615-393-9084." />
+  <meta name="theme-color" content="#0b0b0c" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-  <meta property="og:title" content="Al's Auto Detailing — Showroom Shine, Every Time" />
-  <meta property="og:description" content="Premium interior & exterior detailing, ceramic coatings, and paint correction. Mobile service available." />
+  <meta property="og:title" content="Al's Auto Detailing — Get Your Divine Shine" />
+  <meta property="og:description" content="Premium mobile auto detailing. Hand wash, spray wax, interior cleaning & more. $100 inside & out this week. Call or text 615-393-9084." />
   <meta property="og:type" content="website" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&family=Great+Vibes&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <!-- PROMO BAR -->
+  <div class="promo">
+    <div class="container promo__inner">
+      <span class="promo__text"><strong>⚡ This week only:</strong> $100 Inside &amp; Out + Spray Wax</span>
+      <a href="tel:+16153939084" class="promo__cta">Call / Text 615-393-9084</a>
+    </div>
+  </div>
+
   <header class="nav" id="top">
     <div class="container nav__inner">
       <a href="#top" class="brand">
-        <span class="brand__mark" aria-hidden="true">A</span>
+        <img src="logo.svg" alt="" class="brand__logo" width="56" height="22" />
         <span class="brand__text">Al's <strong>Auto Detailing</strong></span>
       </a>
       <nav class="nav__links" aria-label="Primary">
         <a href="#services">Services</a>
         <a href="#pricing">Pricing</a>
-        <a href="#why">Why Us</a>
+        <a href="#gallery">Our Work</a>
         <a href="#reviews">Reviews</a>
         <a href="#contact">Contact</a>
       </nav>
-      <a href="#contact" class="btn btn--sm">Book Now</a>
+      <a href="tel:+16153939084" class="btn btn--sm">Call / Text</a>
     </div>
   </header>
 
   <main>
     <!-- HERO -->
     <section class="hero">
-      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="hero__media" aria-hidden="true"></div>
+      <div class="hero__scrim" aria-hidden="true"></div>
       <div class="container hero__inner">
-        <p class="eyebrow">Interior • Exterior • Ceramic Coatings</p>
-        <h1 class="hero__title">Your car deserves a<br /><span class="grad">showroom shine.</span></h1>
-        <p class="hero__sub">Al's Auto Detailing brings meticulous, hand-finished care to every vehicle. We come to you, or you come to us — either way, you drive away looking brand new.</p>
+        <p class="eyebrow">Premium Mobile Auto Detailing</p>
+        <h1 class="hero__title">Get Your <span class="script">Divine Shine</span></h1>
+        <p class="hero__sub">Hand-finished detailing that makes your car look showroom-new — inside and out. We bring the full setup to your driveway. No brushes, no shortcuts, just a flawless finish.</p>
         <div class="hero__cta">
-          <a href="#contact" class="btn">Book a Detail</a>
-          <a href="#pricing" class="btn btn--ghost">View Pricing</a>
+          <a href="tel:+16153939084" class="btn btn--lg">📞 Call / Text 615-393-9084</a>
+          <a href="#pricing" class="btn btn--ghost btn--lg">See Pricing</a>
         </div>
         <div class="hero__stats">
           <div><strong>1,200+</strong><span>Cars detailed</span></div>
-          <div><strong>4.9★</strong><span>Average rating</span></div>
-          <div><strong>100%</strong><span>Satisfaction guarantee</span></div>
+          <div><strong>4.9★</strong><span>Customer rating</span></div>
+          <div><strong>100%</strong><span>Satisfaction</span></div>
         </div>
       </div>
     </section>
@@ -57,42 +66,60 @@
     <section class="section" id="services">
       <div class="container">
         <header class="section__head">
-          <p class="eyebrow">What we do</p>
+          <p class="eyebrow">Premium Services</p>
           <h2>Detailing done right, down to the detail</h2>
-          <p class="section__lead">Every package is performed by hand with professional-grade products. No automated brushes, no shortcuts.</p>
+          <p class="section__lead">Every service is performed by hand with professional-grade products that are safe for every finish.</p>
         </header>
         <div class="grid grid--3">
           <article class="card">
             <div class="card__icon">🧼</div>
-            <h3>Exterior Wash &amp; Wax</h3>
-            <p>Hand wash, clay bar, tire dressing, and a protective wax that makes water bead and dirt slide off.</p>
-          </article>
-          <article class="card">
-            <div class="card__icon">🪑</div>
-            <h3>Interior Deep Clean</h3>
-            <p>Full vacuum, steam-cleaned carpets &amp; upholstery, leather conditioning, and streak-free glass.</p>
+            <h3>Exterior Hand Wash</h3>
+            <p>Gentle foam hand wash, wheels, and a spotless dry — no automated brushes that swirl your paint.</p>
           </article>
           <article class="card">
             <div class="card__icon">✨</div>
-            <h3>Paint Correction</h3>
-            <p>Multi-stage machine polishing removes swirl marks, scratches, and oxidation to restore depth and gloss.</p>
+            <h3>Spray Wax &amp; Seal</h3>
+            <p>A protective spray wax that brings out deep gloss and makes water and dirt bead right off.</p>
           </article>
           <article class="card">
-            <div class="card__icon">🛡️</div>
-            <h3>Ceramic Coating</h3>
-            <p>Long-lasting nano-ceramic protection with years of hydrophobic shine and UV defense.</p>
+            <div class="card__icon">🪑</div>
+            <h3>Interior Cleaning</h3>
+            <p>Full vacuum, wipe-down, dusted vents, conditioned surfaces, and streak-free glass inside and out.</p>
           </article>
           <article class="card">
-            <div class="card__icon">🚐</div>
-            <h3>Mobile Service</h3>
-            <p>We bring the full setup to your home or office. Power and water supplied — you don't lift a finger.</p>
+            <div class="card__icon">🧴</div>
+            <h3>Carpet &amp; Upholstery Shampoo</h3>
+            <p>Deep shampoo and extraction that lifts stains, odors, and ground-in dirt from seats and carpets.</p>
+          </article>
+          <article class="card">
+            <div class="card__icon">🛞</div>
+            <h3>Tire Shine</h3>
+            <p>Cleaned, dressed tires and trim with a rich, long-lasting shine that frames the whole car.</p>
           </article>
           <article class="card">
             <div class="card__icon">🏆</div>
-            <h3>Showroom Package</h3>
-            <p>The works: correction, coating, engine bay, and a flawless interior. For cars that deserve it all.</p>
+            <h3>Full Detail Package</h3>
+            <p>The works — inside and out, top to bottom. The complete reset for a truly divine shine.</p>
           </article>
         </div>
+      </div>
+    </section>
+
+    <!-- IN ACTION BAND -->
+    <section class="action">
+      <div class="action__media" aria-hidden="true"></div>
+      <div class="action__scrim" aria-hidden="true"></div>
+      <div class="container action__inner">
+        <p class="eyebrow">Hands-on care</p>
+        <h2>We treat every car like it's our own</h2>
+        <p class="action__lead">From daily drivers to dream cars, each vehicle gets the same meticulous, hand-washed attention.</p>
+        <ul class="checks">
+          <li>Hand wash &amp; dry — safe for every finish</li>
+          <li>Premium, pH-balanced products</li>
+          <li>Mobile service — we come to you</li>
+          <li>100% satisfaction guarantee</li>
+        </ul>
+        <a href="tel:+16153939084" class="btn btn--lg">Book Your Detail</a>
       </div>
     </section>
 
@@ -102,71 +129,63 @@
         <header class="section__head">
           <p class="eyebrow">Simple, honest pricing</p>
           <h2>Pick your package</h2>
-          <p class="section__lead">Prices shown are starting points for sedans. Trucks, SUVs, and vans are quoted on size.</p>
+          <p class="section__lead">Prices vary with vehicle size &amp; condition. Call or text <a href="tel:+16153939084">615-393-9084</a> to confirm your quote.</p>
         </header>
         <div class="grid grid--3 pricing">
           <article class="price">
             <h3>Express Shine</h3>
-            <p class="price__amt">$79<span>/ visit</span></p>
+            <p class="price__amt">from $60</p>
             <ul>
-              <li>Hand wash &amp; dry</li>
-              <li>Wheels &amp; tire shine</li>
-              <li>Windows in &amp; out</li>
-              <li>Quick interior vacuum</li>
+              <li>Exterior hand wash &amp; dry</li>
               <li>Spray wax protection</li>
+              <li>Tire shine</li>
+              <li>Windows cleaned</li>
             </ul>
-            <a href="#contact" class="btn btn--ghost btn--block">Book Express</a>
+            <a href="tel:+16153939084" class="btn btn--ghost btn--block">Call to Book</a>
           </article>
           <article class="price price--featured">
-            <div class="price__tag">Most popular</div>
-            <h3>Full Detail</h3>
-            <p class="price__amt">$199<span>/ visit</span></p>
+            <div class="price__tag">This week only</div>
+            <h3>Inside &amp; Out Special</h3>
+            <p class="price__amt">$100</p>
             <ul>
-              <li>Everything in Express</li>
-              <li>Clay bar &amp; sealant</li>
-              <li>Interior steam clean</li>
-              <li>Leather &amp; trim conditioning</li>
-              <li>Carpet &amp; upholstery shampoo</li>
+              <li>Full exterior hand wash</li>
+              <li>Spray wax &amp; seal</li>
+              <li>Complete interior cleaning</li>
+              <li>Tire shine &amp; trim</li>
+              <li>Streak-free glass</li>
             </ul>
-            <a href="#contact" class="btn btn--block">Book Full Detail</a>
+            <a href="tel:+16153939084" class="btn btn--block">Claim This Deal</a>
           </article>
           <article class="price">
-            <h3>Showroom</h3>
-            <p class="price__amt">$499<span>+</span></p>
+            <h3>Full Detail</h3>
+            <p class="price__amt">from $180</p>
             <ul>
-              <li>Everything in Full Detail</li>
-              <li>Multi-stage paint correction</li>
-              <li>Ceramic coating</li>
-              <li>Engine bay cleaning</li>
-              <li>12-month protection</li>
+              <li>Everything in Inside &amp; Out</li>
+              <li>Carpet &amp; upholstery shampoo</li>
+              <li>Deep interior conditioning</li>
+              <li>Stain &amp; odor removal</li>
             </ul>
-            <a href="#contact" class="btn btn--ghost btn--block">Request Quote</a>
+            <a href="tel:+16153939084" class="btn btn--ghost btn--block">Call for Quote</a>
           </article>
         </div>
+        <p class="pricing__note">Trucks, SUVs, and vans may vary. Call or text for an exact price — same-day appointments often available.</p>
       </div>
     </section>
 
-    <!-- WHY US -->
-    <section class="section" id="why">
-      <div class="container why">
-        <div class="why__text">
-          <p class="eyebrow">Why Al's</p>
-          <h2>The difference is in the details</h2>
-          <p class="section__lead">We treat every vehicle like it's our own. That means the right products, the right process, and a finish you can see yourself in.</p>
-          <ul class="checks">
-            <li>Insured &amp; detail-certified technicians</li>
-            <li>Premium, pH-balanced products that are safe for every finish</li>
-            <li>Flexible scheduling — evenings and weekends available</li>
-            <li>Transparent pricing with no surprise add-ons</li>
-            <li>100% satisfaction guarantee — we make it right</li>
-          </ul>
-        </div>
-        <div class="why__panel" aria-hidden="true">
-          <div class="why__badge">
-            <span class="why__big">4.9</span>
-            <span class="why__stars">★★★★★</span>
-            <span class="why__small">from 300+ reviews</span>
-          </div>
+    <!-- GALLERY -->
+    <section class="section" id="gallery">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow">Our Work</p>
+          <h2>Shine worth showing off</h2>
+          <p class="section__lead">From everyday rides to showroom exotics — this is the finish you can expect.</p>
+        </header>
+        <div class="gallery">
+          <figure class="gallery__item gallery__item--wide"><img src="images/amg-gold.jpg" alt="Gold Mercedes-AMG GT detailed to a mirror shine" loading="lazy" /></figure>
+          <figure class="gallery__item"><img src="images/ferrari.jpg" alt="Red Ferrari with a flawless showroom finish" loading="lazy" /></figure>
+          <figure class="gallery__item"><img src="images/lambo.jpg" alt="White Lamborghini detailed and polished" loading="lazy" /></figure>
+          <figure class="gallery__item"><img src="images/sedan.jpg" alt="Black sedan with a deep, clean gloss" loading="lazy" /></figure>
+          <figure class="gallery__item gallery__item--wide"><img src="images/camaro.jpg" alt="Blue Camaro gleaming after a full detail" loading="lazy" /></figure>
         </div>
       </div>
     </section>
@@ -186,12 +205,12 @@
           </figure>
           <figure class="quote">
             <div class="quote__stars">★★★★★</div>
-            <blockquote>"The ceramic coating is unreal — rain just rolls right off. Worth every penny and then some."</blockquote>
+            <blockquote>"Came right to my driveway and had my SUV spotless in a couple hours. Professional, on time, incredible shine."</blockquote>
             <figcaption>— Devon R.</figcaption>
           </figure>
           <figure class="quote">
             <div class="quote__stars">★★★★★</div>
-            <blockquote>"They came to my office and had my SUV spotless by lunch. Professional, on time, incredible results."</blockquote>
+            <blockquote>"The inside &amp; out special is an unbeatable deal. Interior looked and smelled brand new. Highly recommend."</blockquote>
             <figcaption>— Priya S.</figcaption>
           </figure>
         </div>
@@ -203,13 +222,14 @@
       <div class="container contact">
         <div class="contact__info">
           <p class="eyebrow">Get in touch</p>
-          <h2>Ready for that new-car feeling?</h2>
-          <p class="section__lead">Call, text, or send us a note and we'll get you on the schedule. Mobile appointments fill up fast — book early.</p>
+          <h2>Ready for that <span class="script">divine shine?</span></h2>
+          <p class="section__lead">Call or text to book — mobile appointments fill up fast, so reach out early.</p>
+          <a href="tel:+16153939084" class="contact__phone">📞 615-393-9084</a>
           <ul class="contact__list">
-            <li><span>Call / Text</span><a href="tel:+15551234567">(555) 123-4567</a></li>
-            <li><span>Email</span><a href="mailto:hello@alsautodetailing.com">hello@alsautodetailing.com</a></li>
+            <li><span>Call / Text</span>615-393-9084</li>
             <li><span>Hours</span>Mon–Sat, 8am – 6pm</li>
-            <li><span>Service area</span>Citywide + 25 mile mobile radius</li>
+            <li><span>Service area</span>Mobile — we come to you</li>
+            <li><span>This week</span>$100 Inside &amp; Out + Spray Wax</li>
           </ul>
         </div>
         <form class="contact__form" onsubmit="return handleSubmit(event)">
@@ -225,8 +245,8 @@
             <label for="service">Package</label>
             <select id="service" name="service">
               <option>Express Shine</option>
-              <option selected>Full Detail</option>
-              <option>Showroom</option>
+              <option selected>Inside &amp; Out Special — $100</option>
+              <option>Full Detail</option>
               <option>Not sure — help me choose</option>
             </select>
           </div>
@@ -244,10 +264,10 @@
   <footer class="footer">
     <div class="container footer__inner">
       <div class="brand">
-        <span class="brand__mark" aria-hidden="true">A</span>
+        <img src="logo.svg" alt="" class="brand__logo" width="56" height="22" />
         <span class="brand__text">Al's <strong>Auto Detailing</strong></span>
       </div>
-      <p>© <span id="year">2026</span> Al's Auto Detailing. Showroom shine, every time.</p>
+      <p>© <span id="year">2026</span> Al's Auto Detailing · Get Your Divine Shine · <a href="tel:+16153939084">615-393-9084</a></p>
       <nav class="footer__links" aria-label="Footer">
         <a href="#services">Services</a>
         <a href="#pricing">Pricing</a>
@@ -261,7 +281,7 @@
     function handleSubmit(e) {
       e.preventDefault();
       var note = document.getElementById('formNote');
-      note.textContent = "Thanks! This is a demo form — connect it to email or a booking tool to go live. We'd normally confirm within an hour.";
+      note.textContent = "Thanks! This demo form isn't connected yet — for now, call or text 615-393-9084 to lock in your appointment.";
       note.classList.add('form__note--ok');
       e.target.reset();
       return false;
