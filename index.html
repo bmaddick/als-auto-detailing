@@ -233,10 +233,10 @@
           </ul>
         </div>
         <form class="contact__form" onsubmit="return handleSubmit(event)">
-          <input type="hidden" name="_subject" value="New booking request — Al's Auto Detailing website" />
-          <input type="hidden" name="_template" value="table" />
-          <input type="hidden" name="_autoresponse" value="Thanks for reaching out to Al's Auto Detailing! We've got your request and will be in touch shortly to confirm your appointment and give you an exact quote. Need it sooner? Call or text us anytime at 615-393-9084. We appreciate you — and we'll have your ride looking its best. — Al's Auto Detailing, Lebanon, TN" />
-          <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+          <input type="hidden" name="access_key" value="6d57efff-e2fa-4782-bee4-6b5b9efc65f6" />
+          <input type="hidden" name="subject" value="New booking request — Al's Auto Detailing website" />
+          <input type="hidden" name="from_name" value="Al's Auto Detailing Website" />
+          <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
           <div class="field">
             <label for="name">Name</label>
             <input id="name" name="name" type="text" required placeholder="Your name" />
@@ -246,7 +246,7 @@
             <input id="phone" name="phone" type="tel" required placeholder="(555) 000-0000" />
           </div>
           <div class="field">
-            <label for="email">Email <span class="field__opt">(for your confirmation)</span></label>
+            <label for="email">Email <span class="field__opt">(optional — so we can follow up)</span></label>
             <input id="email" name="email" type="email" placeholder="you@email.com" />
           </div>
           <div class="field">
@@ -286,7 +286,7 @@
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
-    var FORM_ENDPOINT = "https://formsubmit.co/ajax/Alexfite3@gmail.com";
+    var FORM_ENDPOINT = "https://api.web3forms.com/submit";
     async function handleSubmit(e) {
       e.preventDefault();
       var form = e.target;
